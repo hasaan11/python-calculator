@@ -1,0 +1,19 @@
+name: Run tests on push
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - tests/test_calculator.py
+
+jobs:
+  run-file:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Run specific file
+        run: python tests/test_calculator.py
