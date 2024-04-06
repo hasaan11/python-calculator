@@ -3,8 +3,7 @@ name: Run tests on push
 on:
   push:
     branches:
-      - master
-      - main
+      - '*'
     paths:
       - tests/test_calculator.py
     workflow_dispatch:
