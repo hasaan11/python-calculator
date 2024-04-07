@@ -9,5 +9,8 @@ jobs:
             - name: Checkout code
               uses: actions/checkout@v2
 
+            - name: install pytest
+              run: pip install pytest
+
             - name: Run specific file
               run: python tests/test_calculator.py
