@@ -18,6 +18,7 @@ def setup_data():
     (5, 3, 8),
     (-1, 1, 0),
     (0, 0, 0),
+    (0,0,1)
 ])
 def test_addition(num1, num2, expected):
     assert addition(num1, num2) == expected
